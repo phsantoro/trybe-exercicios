@@ -1,0 +1,12 @@
+h1, p {
+    text-align: center;
+}
+
+li:hover {
+    background-color: aqua;
+}
+
+li:active {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+}
