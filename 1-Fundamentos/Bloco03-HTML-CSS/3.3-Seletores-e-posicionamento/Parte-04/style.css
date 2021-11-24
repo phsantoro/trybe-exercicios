@@ -1,43 +1,53 @@
-.container-one:hover {
-    border: 2px solid #3D5A80;
+div:hover {
+    border: 5px solid black
 }
 
-.container-one h3 {
-    color: #EE6C4D;
-    font-style: italic;
+div:nth-of-type(1) {
+    background-color: #3D5A80;
 }
 
-.container-two:hover {
-    border: 2px solid #98C1D9;
+div:nth-of-type(2) {
+    background-color: #98C1D9;
 }
 
-.container-two h3 {
-    color: #E0FBFC;
+div:nth-of-type(3) {
+    background-color: #EE6C4D;
 }
 
-.container-three:hover {
-    border: 2px solid #EE6C4D;
-    padding: 25px;
+div:nth-of-type(4) {
+    background-color: #293241;
 }
 
-.container-three h3 {
+div:nth-of-type(5) {
+    background-color: #E0FBFC ;
+}
+
+
+div:nth-of-type(1) > h3 {
+    color: ##E0FBFC;
+}
+
+div:nth-of-type(2) > h3 {
     color: #3D5A80;
-    font-style: italic;
+    font-size: 25px;
 }
 
-.container-four:hover {
-    border: 2px solid #293241;
-}
-
-.container-four h3 {
+div:nth-of-type(3) > h3 {
     color: #98C1D9;
 }
 
-.container-five:hover {
-    border: 2px solid #E0FBFC;
+div:nth-of-type(4) > h3 {
+    color: #EE6C4D;
 }
 
-.container-five h3 {
+div:nth-of-type(5) > h3 {
     color: #293241;
-    font-style: italic;
 }
+
+div:nth-of-type(3) {
+    height: 75px;
+}
+
+div:nth-child(odd) h3 {
+    font-style: italic
+  }
