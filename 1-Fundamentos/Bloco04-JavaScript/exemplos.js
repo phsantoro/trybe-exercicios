@@ -84,3 +84,5 @@ if ( weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "q
 }   else if ( weekDay === "Sábado" || weekDay === "Domingo" ) {
     console.log( "FINALMENTE, descanso merecido UwU" )
 }
+
+
