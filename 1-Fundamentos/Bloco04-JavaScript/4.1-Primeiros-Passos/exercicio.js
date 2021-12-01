@@ -53,3 +53,18 @@ if (number > 0) {
 } else {
     console.log("zero")
 }
+
+// 5. Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
+
+const angulo1 = 50;
+const angulo2 = 60;
+const angulo3 = 70;
+
+let triangulo = angulo1 + angulo2 + angulo3
+
+
+if (triangulo === 180 ) {
+    console.log(true)
+} else {
+    console.log(false)
+}
