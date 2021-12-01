@@ -26,3 +26,18 @@ if (numberOne > numberTwo ) {
 } else {
     console.log("O maior número é: ", numberTwo)
 }
+
+// 3. Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
+
+const valueOne = 10;
+const valueTwo = 20;
+const valueThree = 30;
+
+if ( valueOne > valueTwo && valueOne > valueThree) {
+    console.log("O maior número é: ", valueOne)
+} else if (valueTwo > valueOne && valueTwo > valueThree) {
+    console.log("O maior número é: ", valueTwo)
+} else {
+    console.log("O maior número é: ", valueThree)
+}
+
