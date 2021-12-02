@@ -68,7 +68,7 @@ if (triangulo === 180) {
 
 // 6. Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
 
-let peça;
+let peça = "Rei";
 
 switch (peça) {
   case "Peão":
@@ -92,9 +92,43 @@ switch (peça) {
     break;
 
   case "Rei":
-    console.log("Se movimenta na diagonal, vertical e horizontal, porém apenas uma casa");
+    console.log(
+      "Se movimenta na diagonal, vertical e horizontal, porém apenas uma casa"
+    );
     break;
 
-    default:
-    console.log("Peça inválida")
+  default:
+    console.log("Peça inválida");
+    break;
+}
+
+
+// // 7.Escreva um programa que converta uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+// Porcentagem >= 90 -> A
+// Porcentagem >= 80 -> B
+// Porcentagem >= 70 -> C
+// Porcentagem >= 60 -> D
+// Porcentagem >= 50 -> E
+// Porcentagem < 50 -> F
+// O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
+
+
+
+
+const nota = 76;
+
+if (nota < 0 || nota > 100) {
+  console.log("Erro, nota incorreta!");
+} else if (nota >= 90) {
+  console.log("A");
+} else if (nota >= 80) {
+  console.log("B");
+} else if (nota >= 70) {
+  console.log("C");
+} else if (nota >= 60) {
+  console.log("D");
+} else if (nota >= 50) {
+  console.log("E");
+} else {
+  console.log("F");
 }
