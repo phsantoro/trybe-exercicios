@@ -115,7 +115,7 @@ switch (peça) {
 
 
 
-const nota = 76;
+const nota = 81;
 
 if (nota < 0 || nota > 100) {
   console.log("Erro, nota incorreta!");
@@ -132,3 +132,73 @@ if (nota < 0 || nota > 100) {
 } else {
   console.log("F");
 }
+
+
+// 8. Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for par. Caso contrário, ele deve retornar false .
+
+const a = 3;
+const b = 7;
+const c = 10;
+
+let par = false;
+
+if ( a % 2 === 0 || b % 2 === 0 || c % 2 === 0) {
+  par = true; 
+}
+
+// 9. Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
+
+const d = 2;
+const e = 4;
+const f = 6;
+
+let impar = false;
+
+if ( d % 2 === 0 || e % 2 === 0 || f % 2 === 0) {
+  impar = true; 
+}
+
+//10. Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+
+const custoProduto = 5;
+const valorVenda = 10;
+
+if ( custoProduto >= 0 && valorVenda >= 0) {
+  const produtoComImposto = custoProduto * 1.2;
+  const lucro = (valorVenda - produtoComImposto) * 1000;
+} else {
+  return "Erro, os valores devem ser positivos"
+}
+
+// 11. Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+
+let inss;
+let ir;
+
+const salario = 1800;
+
+if ( salario <= 1556.94) {
+  inss = salario * 0.08;
+} else if ( salario <= 2594.92) {
+  inss = salario * 0.09;
+} else if ( salario <= 5189.82) {
+  inss = salario * 0.11;
+} else {
+  inss = 570.88;
+}
+
+const salario2 = salario - inss;
+
+if (salario2 <= 1903.98) {
+  ir = 0;
+} else if (salario2 <= 2826.65) {
+  ir = (salario2 * 0.075) - 152.80;
+} else if (salario2 <= 3751.05) {
+  ir = (salario2 * 0.15) - 354.80;
+} else if ( salario2 <= 4664.68) {
+  ir = (salario2 * 0.225) - 636.13;
+} else {
+  ir = (salario2 * 0.275) - 869.36
+}
+
+console.log("Salário: " + (salario2 - ir));
