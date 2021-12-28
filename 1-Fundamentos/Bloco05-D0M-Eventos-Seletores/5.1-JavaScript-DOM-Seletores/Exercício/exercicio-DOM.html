@@ -95,6 +95,16 @@
             }
         }
         textoMaiusculo();
+
+    // 6 -  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+
+        function mostrarParagrafos() {
+            let paragrafos = document.getElementsByTagName('p');
+            for (let i2 = 0; i2 < paragraphs.length; i2 += 1) {
+            console.log(paragraphs[i2].innerHTML);
+      }
+    }
+    showParagraphs();
         
     </script>
   </body>
