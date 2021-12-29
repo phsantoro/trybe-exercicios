@@ -31,3 +31,10 @@ const terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
 // Agora acesse o terceiroFilho a partir de pai .
 
 const terceiroFilhoNovo = pai.lastElementChild.previousElementSibling;
+
+
+// 1. Crie um irmão para `elementoOndeVoceEsta`.
+const pai = document.getElementById('pai');
+const irmaoElementoOndeVoceEsta = document.createElement('section');
+irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta';
+pai.appendChild(irmaoElementoOndeVoceEsta);
