@@ -95,6 +95,13 @@
       const elementoSectionRight = document.createElement("section");
       elementoSectionRight.className = "right-content";
       elementoMain.appendChild(elementoSectionRight);
+
+      // 7. Adicione uma imagem com `src` configurado para o valor `https://picsum.photos/200` e classe `small-image`. Esse elemento deve ser filho do `section` criado no passo 5;
+
+      const elementoImg = document.createElement('img');
+      elementoImg.className = 'small-image';
+      elementoImg.src = 'https://picsum.photos/200'
+      elementoSectionLeft.appendChild(elementoImg);
     </script>
   </body>
 </html>
